@@ -1,0 +1,202 @@
+/* Reset */
+html, body, div, h1, h2, h3, img, .wrapper {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+}
+
+header, footer, menu, nav {
+  min-width: 100%;
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* Main Style */
+html, body, {
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 12pt;
+  min-width: 1025px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-top: 80px;
+  padding-bottom: 170px;
+}
+
+header {
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  background: #202945;
+  position: fixed;
+  top: 0;
+}
+
+header nav {
+  display: none;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 36px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-kerning: 2em;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.SD-logo {
+  padding-right: 50%;
+}
+
+.fas.fa-bars.fa-2x{
+  color: white;
+  padding-left: 50%;
+}
+
+.he {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hero {
+  background:
+    linear-gradient(
+     rgba(32, 41, 69, 0.77),
+     rgba(32, 41, 69, 0.77)
+     ), url(../../img/annie-spratt-176628_2x.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero img {
+  width: 350px;
+}
+
+#hero-content {
+  position: relative;
+  vertical-align: middle;
+  top: 15%;
+  color: white;
+}
+
+#hero button {
+  display: inline-block;
+}
+
+#work {
+  background: #BF4953;
+  height: auto;
+  padding: 100px 0px;
+  color: white;
+}
+
+#work figure {
+  display: inline-block;
+}
+
+#work img {
+  width: 348px;
+}
+
+#about {
+  background:
+    linear-gradient(
+     rgba(220, 191, 165, 0.84),
+     rgba(220, 191, 165, 0.84)
+     ), url(../../img/priscilla-du-preez-428495.jpg);
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0px;
+}
+
+#about img {
+  vertical-align: middle;
+  padding: 20px;
+}
+
+#about i {
+  display: inline-block;
+  padding: 10px;
+}
+
+#about button {
+  margin-top: 48px;
+}
+
+#about button i {
+  padding: 0px;
+}
+
+footer {
+  position: absolute;
+  height: 170px;
+  bottom: 0;
+  width: 100%;
+  background: #202945;
+  color: white;
+  margin-top: -170px;
+  clear: both;
+}
+
+footer li {
+  display: inline-block;
+}
+
+#footer-content {
+  /* vertical-align: middle; */
+  position: absolute;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
