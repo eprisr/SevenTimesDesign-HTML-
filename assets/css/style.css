@@ -90,6 +90,7 @@ button {
 
 .SD-logo {
   padding-right: 50%;
+  max-height: 48px;
 }
 
 .fas.fa-bars.fa-2x{
@@ -110,7 +111,7 @@ button {
     linear-gradient(
      rgba(32, 41, 69, 0.77),
      rgba(32, 41, 69, 0.77)
-     ), url(../../img/annie-spratt-176628_2x.jpg);
+     ), url(../../img/annie-spratt-176628.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -162,7 +163,19 @@ button {
 
 #about img {
   vertical-align: middle;
-  padding: 20px;
+  padding: 10px;
+}
+
+.palace {
+  max-height: 100px;
+}
+
+.continental {
+  max-width: 300px;
+}
+
+.bradley {
+  max-height: 50px;
 }
 
 #about i {
