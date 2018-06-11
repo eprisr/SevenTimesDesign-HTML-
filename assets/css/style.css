@@ -1,4 +1,13 @@
-html, body, div, h1, h2, h3, h4, p, img, .wrapper {
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+.wrapper {
   margin: 0;
   -webkit-margin: 0;
   padding: 0;
@@ -8,19 +17,24 @@ html, body, div, h1, h2, h3, h4, p, img, .wrapper {
   font-size: 100%;
 }
 
-header, footer, menu, nav {
+header,
+footer,
+menu,
+nav {
   min-width: 100%;
   display: block;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 /* MAIN */
-html, body, {
+html,
+body {
   height: 100%;
 }
 
