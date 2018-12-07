@@ -1,15 +1,16 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import Home from './Pages/Home';
+import Portfolio from './Pages/Portfolio';
 
 class App extends React.Component {
   render() {
     return (
-      <React.Fragment>
-        <Route exact path='/' component={Home} />
-        {/* <Portfolio /> */}
-      </React.Fragment>
-    );
+			<div>
+				<Route exact path="/" component={Home} />
+				<Route path='/portfolio' component={Portfolio} />
+			</div>
+		);
   }
 }
 

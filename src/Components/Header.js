@@ -1,28 +1,55 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	NavItem,
+	NavLink,
+} from 'reactstrap';
 import logo from '../img/seventimes-vertical.png';
 
 class Header extends React.Component {
+	constructor(props) {
+		super(props);
+
+		this.toggle = this.toggle.bind(this);
+		this.state = {
+			isOpen: false
+		};
+	}
+	toggle() {
+		this.setState({
+			isOpen: !this.state.isOpen
+		});
+	}
+
 	render() {
 		return (
 			<React.Fragment>
-				<nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
-				<div className='container'>
-					<Link to='/' className='navbar-brand'>
-							<img src={ logo } alt ="" height="20"></img>
-					</Link>
-					<button className='navbar-toggler' type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span className='navbar-toggler-icon'></span>
-					</button>
-					<div className='collapse navbar-collapse justify-content-end align-items-center' id='navbarSupportedContent'>
-						<ul className='navbar-nav'>
-							<a className='nav-item nav-link' href='#home'>Home</a>
-							<a className='nav-item nav-link' href='#portfolio'>Portfolio</a>
-							<a className='nav-item nav-link' href='#about'>About</a>
-						</ul>
-					</div>
-				</div>
-			</nav>
+				<Navbar expand='lg'>
+					<NavbarBrand>
+						<Link to='/' >
+							<img src={logo} alt='' height='20'></img>
+						</Link>
+					</NavbarBrand>
+					<NavbarToggler onClick={this.toggle} />
+					<Collapse isOpen={this.state.isOpen} navbar>
+						<Nav className='ml-auto' navbar>
+							<NavItem>
+								<NavLink href='/portfolio'>Portfolio</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink href='/'>About</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink href='/'>Contact</NavLink>
+							</NavItem>
+						</Nav>
+					</Collapse>
+				</Navbar>
 			</React.Fragment>
 		);
 	}

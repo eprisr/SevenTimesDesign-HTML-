@@ -8,14 +8,14 @@ import Footer from '../Components/Footer';
 class Home extends React.Component {
   render() {
     return (
-      <React.Fragment>
+			<React.Fragment>
         <Header />
         <Hero />
-        <RecentWork />
-        <About />
-        <Footer />
-      </React.Fragment>
-    );
+				<RecentWork />
+				<About />
+				<Footer />
+			</React.Fragment>
+		);
   }
 }
 
